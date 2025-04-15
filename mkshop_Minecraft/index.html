@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKShopMC - Toko Minecraft Indonesia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo hover-scale">
+                <img src="assets/img/logo.jpg" alt="MCShop Logo">
+            </div>
+            <div class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul>
+                <li style="--i:1"><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li style="--i:2"><a href="#products" class="nav-link"><i class="fas fa-gamepad"></i> Products</a></li>
+                <li style="--i:3"><a href="#cart" class="nav-link"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-badge" id="nav-cart-badge">0</span></a></li>
+                <li style="--i:4"><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1 data-aos="fade-up" data-aos-duration="800" data-text="MKSHOPMC">
+                <span>M</span><span>K</span><span>S</span><span>H</span><span>O</span><span>P</span><span>M</span><span>C</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Toko Minecraft Terpercaya di Indonesia</p>
+            <div class="hero-subtext" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <p><i class="fas fa-shield-alt"></i> Trust!</p>
+                <p><i class="fas fa-cube"></i> Menjual Kebutuhan Game</p>
+                <p><i class="fas fa-star"></i> 1.000+ Testimonial</p>
+            </div>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                <a href="#products" class="btn-cta primary">Lihat Produk</a>
+                <a href="#contact" class="btn-cta secondary">Hubungi Kami</a>
+            </div>
+        </section>
+
+        <div class="hero-to-ambassador-transition">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none" class="transition-wave">
+                <path fill="#1E1E1E" fill-opacity="0.8" d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,42.7C840,32,960,32,1080,42.7C1200,53,1320,75,1380,85.3L1440,96L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
+            </svg>
+            <div class="transition-decoration">
+                <div class="line"></div>
+                <div class="dot"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <section id="ambassadors" class="ambassadors" data-aos="fade-up">
+            <h2 class="section-title">Our Brand Ambassadors</h2>
+            <div class="ambassador-grid">
+                <div class="ambassador-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="ambassador-card-inner">
+                        <img src="assets/ba/HansYT.jpg" alt="Brand Ambassador 1">
+                        <h3>HansYT</h3>
+                        <p>Minecraft Content Creator</p>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/@Hansskt" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/sohanifys/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/hanssyt28/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ambassador-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="ambassador-card-inner">
+                        <img src="assets/ba/danielirz.jpg" alt="Brand Ambassador 2">
+                        <h3>Danielirz</h3>
+                        <p>Minecraft Content Creator</p>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/@Hansskt" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/@danielirz" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@danielirz" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ambassador-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="ambassador-card-inner">
+                        <img src="assets/ba/finguinmc.jpg" alt="Brand Ambassador 3">
+                        <h3>Finguin</h3>
+                        <p>Minecraft Content Creator</p>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/channel/UCjwOFZDAp0-O3Fd4AVGUI5g" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/finguinmc/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@finguinmc?_t=8i1ddkiymtu&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ambassador-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="ambassador-card-inner">
+                        <img src="assets/ba/asnan.png" alt="Brand Ambassador 4">
+                        <h3>Asnan</h3>
+                        <p>Minecraft Content Creator</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#FF8C32" fill-opacity="0.1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <section id="products" class="products" data-aos="fade-up">
+            <h2 class="section-title">Products</h2>
+            <div class="product-grid">
+                <div class="product-card glass" data-aos="fade-up" data-aos-delay="100">
+                    <span class="status hover-scale">Best Seller</span>
+                    <img src="assets/img/mc-java.webp" alt="Minecraft Java Edition">
+                    <h3>Minecraft Java Edition</h3>
+                    <p>Full access account with original email</p>
+                    <span class="price">Rp 350.000</span>
+                    <div class="button-group">
+                        <button class="btn-detail" onclick="showProductDetails('java')">Detail</button>
+                        <button class="btn-buy ring-focus" onclick="addToCart('java')"><span>Buy Now</span></button>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="status">Popular</span>
+                    <img src="assets/img/mc-be.jpg" alt="Minecraft Bedrock Edition">
+                    <h3>Minecraft Bedrock Edition</h3>
+                    <p>Full access with warranty</p>
+                    <span class="price">Rp 150.000</span>
+                    <div class="button-group">
+                        <button class="btn-detail" onclick="showProductDetails('bedrock')">Detail</button>
+                        <button class="btn-buy" onclick="addToCart('bedrock')"><span>Buy Now</span></button>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <span class="status">New</span>
+                    <img src="assets/img/mc-realm.avif" alt="Minecraft Realm">
+                    <h3>Minecraft Realm</h3>
+                    <p>1 Month subscription</p>
+                    <span class="price">Rp 75.000</span>
+                    <div class="button-group">
+                        <button class="btn-detail" onclick="showProductDetails('realm')">Detail</button>
+                        <button class="btn-buy" onclick="addToCart('realm')"><span>Buy Now</span></button>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                    <span class="status">Bundle</span>
+                    <img src="assets/img/mc-bundle.jpg" alt="Minecraft Java & Bedrock Bundle">
+                    <h3>Minecraft Java & Bedrock Bundle</h3>
+                    <p>Get both editions with one purchase</p>
+                    <span class="price">Rp 450.000</span>
+                    <div class="button-group">
+                        <button class="btn-detail" onclick="showProductDetails('javaAndBedrock')">Detail</button>
+                        <button class="btn-buy" onclick="addToCart('javaAndBedrock')"><span>Buy Now</span></button>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+                    <span class="status">Mobile</span>
+                    <img src="assets/img/pojav.jpg" alt="PojavLauncher Premium">
+                    <h3>PojavLauncher <br> Premium</h3>
+                    <p>Play Java Edition on your Android device</p>
+                    <span class="price">Rp 50.000</span>
+                    <div class="button-group">
+                        <button class="btn-detail" onclick="showProductDetails('pojav')">Detail</button>
+                        <button class="btn-buy" onclick="addToCart('pojav')"><span>Buy Now</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="cart-section" data-aos="fade-up">
+            <h2 class="section-title">Your Shopping Cart</h2>
+            <div class="cart-container">
+                <div class="cart-empty" id="cart-empty">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is currently empty</p>
+                    <a href="#products" class="btn-cta primary">Browse Products</a>
+                </div>
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <div class="cart-summary" id="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">Rp 0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount:</span>
+                        <span id="cart-discount">Rp 0</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="cart-total">Rp 0</span>
+                    </div>
+                    <button class="checkout-btn" id="checkout-btn">
+                        <span>Checkout</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@mkshopmc.id</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+62 234 567 890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>@mkshopmc</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-discord"></i>
+                        <span>discord.gg/mkshopmc</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/img/logo.jpg" alt="MKShopMC Logo">
+                <h3 class="footer-title">MK<span>SHOP</span>MC</h3>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#ambassadors">Ambassadors</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/mkshopmc_/"><i class="fab fa-instagram"></i></a>
+                <!-- <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a> -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span class="highlight">MKSHOPMC</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    
+    <!-- Admin Panel (Only visible via URL hash #admin) -->
+    <div id="admin-panel" class="admin-panel">
+        <div class="admin-header">
+            <h2>Admin Panel - Order History</h2>
+            <button id="close-admin" class="close-admin"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="admin-content">
+            <div class="orders-container" id="orders-container">
+                <!-- Orders will be loaded here -->
+                <div class="no-orders">
+                    <p>No orders found.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
